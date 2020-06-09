@@ -5,11 +5,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
     <script src="./core.js"></script>
     <title>Ronin</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="messages"></div>
-    <input type="text" id="box" placeholder="message" />
-    <input type="text" id="user" placeholder="url" />
-    <button onclick="send()">Send</button>
+    <div id="actions">
+      <input type="text" id="box" placeholder="message" class="number" />
+      <input type="text" id="user" placeholder="url" class="number" />
+      <button onclick="send()" class="add">Send</button>
+    </div>
   </body>
 </html>
